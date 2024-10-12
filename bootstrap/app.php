@@ -14,6 +14,7 @@ return Application::configure(basePath: dirname(__DIR__))
         //
         $middleware->alias([
             'merchant' => App\Http\Middleware\Merchant::class,
+            'merchaentVerify' => App\Http\Middleware\merchaentVerify::class,
         ]);
     })
     ->withExceptions(function (Exceptions $exceptions) {
