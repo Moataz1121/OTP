@@ -88,6 +88,7 @@
                 <span class="text-danger">{{ $message }}</span>                  
               @enderror
             </div>
+            @if (config('verify.way') != 'passwordless')
             <div class="mb-3 form-password-toggle">
               <div class="d-flex justify-content-between">
                 <label class="form-label" for="password">Password</label>
@@ -110,6 +111,8 @@
                 <span class="input-group-text cursor-pointer"><i class="bx bx-hide"></i></span>
               </div>
             </div>
+            @endif
+         
             <div class="mb-3">
               <div class="form-check">
                 <input class="form-check-input" type="checkbox" id="remember-me" />

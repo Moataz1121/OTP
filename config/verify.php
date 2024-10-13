@@ -2,5 +2,6 @@
 
 return [
     // custom verification token CVT
-    'way' => 'cvt',
+    // passwordless verification email 
+    'way' => 'passwordless',
 ];
