@@ -1,5 +1,6 @@
 <?php 
 
 return [
-    'way' => 'default',
+    // custom verification token CVT
+    'way' => 'cvt',
 ];
